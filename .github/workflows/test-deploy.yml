@@ -35,7 +35,7 @@ jobs:
           overview-id: "overview"
       - name: Install dependencies
         run: npm ci
-          working-directory: website
+        working-directory: website
       - name: Build website
         run: npm run build
-          working-directory: website
+        working-directory: website
