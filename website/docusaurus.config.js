@@ -43,7 +43,7 @@ const config = {
             title: 'GraphGlue',
             items: [{
                     type: 'doc',
-                    docId: 'docs',
+                    docId: 'docs/docs',
                     position: 'left',
                     label: 'Docs',
                 },
