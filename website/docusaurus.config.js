@@ -48,6 +48,12 @@ const config = {
                     label: 'Docs',
                 },
                 {
+                    type: 'doc',
+                    docId: 'overview',
+                    position: 'left',
+                    label: 'API',
+                  },
+                {
                     href: 'https://github.com/graphglue/graph-glue',
                     label: 'GitHub',
                     position: 'right',
