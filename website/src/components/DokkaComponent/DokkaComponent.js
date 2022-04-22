@@ -4,11 +4,11 @@ import * as platformContentHandler from "./platform-content-handler";
 import styleStyle from "!!raw-loader!/styles/style.css"
 import mainStyle from "!!raw-loader!/styles/main.css"
 import prismStyle from "!!raw-loader!/styles/prism.css"
-import  "style-scoped"
 import { useHistory } from "react-router-dom";
 
 export default function DokkaComponent(properties) {
     useEffect(() => {
+        import("style-scoped")
         clipboard.setup()
         platformContentHandler.setup()
     })
