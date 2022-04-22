@@ -273,38 +273,7 @@ code.block {
     color: var(--hover-link-color);
 }
 
-.copy-icon {
-    cursor: pointer;
-}
 
-.symbol span.copy-icon,
-.sample-container span.copy-icon {
-    display: none;
-}
-
-.symbol:hover span.copy-icon,
-.sample-container:hover span.copy-icon {
-    display: inline-block;
-}
-
-.symbol span.copy-icon::before,
-.sample-container span.copy-icon::before {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    content: '';
-    /* masks are required if you want to change color of the icon dynamically instead of using those provided with the SVG */
-    -webkit-mask: url("../images/copy-icon.svg") no-repeat 50% 50%;
-    mask: url("../images/copy-icon.svg") no-repeat 50% 50%;
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    background-color: var(--copy-icon-color);
-}
-
-.symbol span.copy-icon:hover::before,
-.sample-container span.copy-icon:hover::before {
-    background-color: var(--copy-icon-hover-color);
-}
 
 .copy-popup-wrapper {
     display: none;

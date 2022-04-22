@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import * as clipboard from "./clipboard";
 import * as platformContentHandler from "./platform-content-handler";
 import styleStyle from "!!raw-loader!/styles/style.css"
 import mainStyle from "!!raw-loader!/styles/main.css"
@@ -9,7 +8,6 @@ import { useHistory } from "react-router-dom";
 export default function DokkaComponent(properties) {
     useEffect(() => {
         import("style-scoped")
-        clipboard.setup()
         platformContentHandler.setup()
     })
 
