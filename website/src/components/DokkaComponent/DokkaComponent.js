@@ -7,7 +7,6 @@ import { useHistory } from "react-router-dom";
 
 export default function DokkaComponent(properties) {
     useEffect(() => {
-        import("style-scoped")
         platformContentHandler.setup()
     })
 

@@ -71,6 +71,9 @@ const config = {
             additionalLanguages: ['kotlin'],
         },
     }),
+    scripts: [
+        "https://cdn.jsdelivr.net/npm/style-scoped@0.2.2/scoped.min.js"
+    ]
 };
 
 module.exports = config;
