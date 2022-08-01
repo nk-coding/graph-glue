@@ -18,7 +18,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
       - name: Execute Gradle build
-        run: ./gradlew build dokkaHTMLMultiModule
+        run: ./gradlew build dokkaHtmlMultiModule
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
