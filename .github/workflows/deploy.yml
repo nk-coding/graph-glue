@@ -28,7 +28,9 @@ jobs:
         uses: nk-coding/dokka-html-mdx-transform@testing
         with:
           src: "build/dokka/htmlMultiModule"
-          modules: graphglue
+          modules: |
+            graphglue
+            graphglue-core
           dest: "website/docs"
           folder: "api"
       - name: Install dependencies
