@@ -25,9 +25,12 @@ jobs:
           cache: npm
           cache-dependency-path: website/package-lock.json
       - name: Modify Dokka output
-        uses: nk-coding/dokka-html-mdx-transform@1_6_20
+        uses: nk-coding/dokka-html-mdx-transform@testing
         with:
-          src: "build/dokka/html/graph-glue"
+          src: "build/dokka/html"
+          modules: |
+            graphglue
+            graphglue-core
           dest: "website/docs"
           folder: "api"
       - name: Install dependencies
