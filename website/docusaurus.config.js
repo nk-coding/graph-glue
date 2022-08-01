@@ -50,7 +50,7 @@ const config = {
                 },
                 {
                     type: 'doc',
-                    docId: apiSidebar[0].id ?? apiSidebar[0].link.id,
+                    docId: apiSidebar[0].items[0].id ?? apiSidebar[0].items[0].link?.id,
                     position: 'left',
                     label: 'API',
                   },
